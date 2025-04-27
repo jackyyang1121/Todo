@@ -1,0 +1,27 @@
+todo_project/                # 後端專案根目錄
+├── todo_project/           # 設定與主配置文件
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py       # Django 設定文件
+│   ├── urls.py           # 路由配置文件
+│   └── wsgi.py
+├── todo_app/              # 待辦事項應用
+│   ├── __init__.py
+│   ├── admin.py          # 管理員介面設定
+│   ├── apps.py
+│   ├── migrations/       # 數據庫遷移文件
+│   ├── models.py         # 數據模型
+│   ├── serializers.py    # API 序列化器
+│   ├── tests.py
+│   └── views.py          # API 視圖
+├── manage.py              # Django 管理腳本
+└── requirements.txt       # 套件依賴列表
+
+TodoApp/                   # 前端專案根目錄
+├── android/              # Android 原生代碼
+├── ios/                  # iOS 原生代碼
+├── node_modules/         # Node.js 模組
+├── App.js                # 主應用文件
+├── index.js              # 入口文件
+├── package.json          # 前端依賴配置文件
+└── ...                   # 其他配置文件

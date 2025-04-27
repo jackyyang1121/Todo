@@ -1,0 +1,11 @@
+docker pull postgres
+docker run -d --name my-local-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres
+docker exec -it my-local-postgres bash
+psql -U postgres
+CREATE USER your_app_user WITH PASSWORD 'your_app_password';
+CREATE DATABASE your_app_db;
+ALTER DATABASE your_app_db OWNER TO your_app_user;
+\q
+exit
+
+

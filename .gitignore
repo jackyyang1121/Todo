@@ -1,0 +1,14 @@
+# 忽略 commandlinetools-linux-8512546_latest.zip 本身
+commandlinetools-linux-8512546_latest.zip
+
+# 忽略解壓後的資料夾（假設解壓到 cmdline-tools）
+cmdline-tools/
+
+# 或者更廣泛忽略所有解壓相關檔案
+commandlinetools-*/
+
+# 忽略常見的大型檔案類型
+*.zip
+*.jar
+*.so
+*.aar
