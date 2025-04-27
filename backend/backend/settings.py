@@ -86,7 +86,7 @@ DATABASES = {
     }
 }
 CORS_ALLOWED_ORIGINS = [
-    "https://<your-codespace-name>-8081.github.dev",
+    "https://literate-acorn-7759rgxrjg2wxr-8081.app.github.dev",
 ]
 
 
