@@ -1,3 +1,4 @@
+pip install -r requirements.txt
 django-admin startproject backend
 cd backend
 python manage.py startapp todo_app
