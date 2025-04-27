@@ -80,7 +80,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "your_app_db",
         "USER": "your_app_user",
-        "PASSWORD": "your_app_password",
+        "PASSWORD": "your_app_password",  
         "HOST": "localhost",
         "PORT": "5432",
     }
