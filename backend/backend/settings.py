@@ -86,7 +86,7 @@ DATABASES = {
     }
 }
 CORS_ALLOWED_ORIGINS = [
-    "https://literate-acorn-7759rgxrjg2wxr-8081.app.github.dev",
+    "http://10.0.2.2:8000",
 ]
 
 

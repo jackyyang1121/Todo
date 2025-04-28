@@ -32,7 +32,7 @@ const App = () => {
   // useEffect 在組件載入時執行一次，獲取後端數據
   useEffect(() => {
     // 使用 axios 發送 GET 請求到後端 API
-    axios.get<Todo[]>('https://literate-acorn-7759rgxrjg2wxr-8000.app.github.dev/api/todos/')
+    axios.get<Todo[]>('http://10.0.2.2:8000/api/todos/')
       .then(response => setTodos(response.data))  // 成功時更新 todos 狀態
       .catch(error => console.error(error));      // 失敗時打印錯誤
   }, []);  // 空依賴陣列表示只執行一次
