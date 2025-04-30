@@ -3,3 +3,7 @@
 npx react-native start --port 8081
 2.
 npx react-native run-android
+
+
+#檢查
+npx @react-native/cli doctor
