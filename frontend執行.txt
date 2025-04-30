@@ -6,4 +6,4 @@ npx react-native run-android
 
 
 #檢查
-npx @react-native/cli doctor
+npx @react-native-community/cli doctor
