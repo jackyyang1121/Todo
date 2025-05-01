@@ -21,3 +21,15 @@ fields = ['id', 'title', 'completed', 'created_at']:
 指定序列化器要處理的字段（欄位）。
 id：待辦事項的唯一識別碼（通常是自動生成的）。
 """
+
+"""
+簡單來說，TodoSerializer 是一個工具，用來把 Django 的 Todo 模型資料轉成 JSON 格式，方便前端使用，或者把前端傳來的 JSON 資料轉回 Todo 模型的格式。它基於 Django REST Framework 的 ModelSerializer，會自動根據 Todo 模型的結構來處理資料。
+
+model = Todo: 告訴序列化器我們要處理的是 Todo 這個模型。
+fields = ['id', 'title', 'completed', 'created_at']: 指定只處理這四個欄位：
+id: 每筆待辦事項的獨一無二編號。
+title: 待辦事項的標題。
+completed: 待辦事項是否已完成。
+created_at: 待辦事項的建立時間。
+就像一個翻譯機，把資料在後端模型和前端 JSON 之間來回轉換！
+"""
