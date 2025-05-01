@@ -1,19 +1,19 @@
 todo_project/                # 後端專案根目錄
 ├── todo_project/           # 設定與主配置文件
 │   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py       # Django 設定文件
-│   ├── urls.py           # 路由配置文件
-│   └── wsgi.py
+│   ├── asgi.py             #用來部署專案的文件。
+│   ├── settings.py       # Django 設定文件，定義資料庫連接、應用程式清單等。
+│   ├── urls.py           # 路由配置文件，告訴系統哪個網址對應哪個功能。
+│   └── wsgi.py            #用來部署專案的文件。
 ├── todo_app/              # 待辦事項應用
 │   ├── __init__.py
-│   ├── admin.py          # 管理員介面設定
+│   ├── admin.py          # 管理員介面，設定設定管理員介面，讓管理員能看到待辦事項。
 │   ├── apps.py
-│   ├── migrations/       # 數據庫遷移文件
-│   ├── models.py         # 數據模型
-│   ├── serializers.py    # API 序列化器
+│   ├── migrations/       # 數據庫遷移文件，記錄資料庫的變更歷史。
+│   ├── models.py         # 數據模型，定義待辦事項的資料結構（例如標題、內容、是否完成）。
+│   ├── serializers.py    # API 序列化器，把資料轉成 JSON 格式給前端，或把前端的資料轉回資料庫格式。
 │   ├── tests.py
-│   └── views.py          # API 視圖
+│   └── views.py          # API 視圖，處理用戶的請求（像是查詢、添加、修改待辦事項）。
 ├── manage.py              # Django 管理腳本
 └── requirements.txt       # 套件依賴列表
 
@@ -22,6 +22,6 @@ frontend/                   # 前端專案根目錄
 ├── ios/                  # iOS 原生代碼
 ├── node_modules/         # Node.js 模組
 ├── App.tsx                # 主應用文件
-├── index.js              # 入口文件
+├── index.js              # 入口文件，負責啟動應用。
 ├── package.json          # 前端依賴配置文件
 └── ...                   # 其他配置文件
