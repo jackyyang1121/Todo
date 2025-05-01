@@ -1,11 +1,17 @@
 docker pull postgres
 docker run -d --name my-local-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres
 docker exec -it my-local-postgres bash
+
+#以 postgres 使用者身份進入 psql：
 psql -U postgres
+
+#在 psql 中執行 SQL 指令來創建新使用者和資料庫（請替換名稱和密碼）：
 CREATE USER your_app_user WITH PASSWORD 'your_app_password';
 CREATE DATABASE your_app_db;
 ALTER DATABASE your_app_db OWNER TO your_app_user;
 \q
 exit
 
+DATABASE_URL 將會是：
+postgresql://your_app_user:your_app_password@localhost:5432/your_app_db
 
