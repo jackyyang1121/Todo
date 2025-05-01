@@ -21,7 +21,7 @@ TodoApp/                   # 前端專案根目錄
 ├── android/              # Android 原生代碼
 ├── ios/                  # iOS 原生代碼
 ├── node_modules/         # Node.js 模組
-├── App.js                # 主應用文件
+├── App.tsx                # 主應用文件
 ├── index.js              # 入口文件
 ├── package.json          # 前端依賴配置文件
 └── ...                   # 其他配置文件
