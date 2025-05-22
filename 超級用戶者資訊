@@ -1,0 +1,7 @@
+創建:
+python manage.py createsuperuser
+
+資訊:
+Username:Todo
+Email:mingyongpig@gmail.com
+password:jacky123456

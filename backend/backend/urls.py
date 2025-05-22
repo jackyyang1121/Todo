@@ -11,7 +11,7 @@ DefaultRouter 是一個工具，能自動幫你生成 API 的路徑（例如 GET
 '''
 router.register(r'todos', TodoViewSet)  # 註冊 todos 路徑，對應 TodoViewSet(在views.py定義)
 '''
-router.register 是告訴路由器，有一個名為 todos 的資源（resource），並將它綁定到 TodoViewSet。
+router.register 是告訴路由器，有一個名為 todos 的資源（resource），並將它綁定到 TodoViewSet(在views.py定義)。
 r'todos' 是 URL 的路徑前綴，例如 /todos/。
 TodoViewSet 是一個 ViewSet（視圖集），它定義了如何處理 todos 相關的請求（例如查詢、創建、更新、刪除待辦事項）。
 DefaultRouter 會根據 TodoViewSet 自動生成以下 API 路徑：
@@ -22,11 +22,12 @@ PUT /todos/<id>/：更新整個用戶資訊
 DELETE /todos/<id>/：刪除用戶
 
 我不用手動定義每個 API 路由（除非你想要客製化）。
-DefaultRouter 幫你根據 ViewSet 自動產生完整 CRUD 路由。
-只要你有正確寫好 UserViewSet（通常繼承 ModelViewSet），API 就會「自動生出來」。
+DefaultRouter 幫我根據 ViewSet 自動產生完整 CRUD 路由。
+只要我有正確寫好 TodoViewSet（通常繼承 ModelViewSet），API 就會「自動生出來」。
 '''
 
 # 定義 URL 模式
+#http://10.0.2.2:8000/api/todos/
 urlpatterns = [
     path('admin/', admin.site.urls),    # 管理員介面
     path('api/', include(router.urls)), # API 端點，例如 /api/todos/

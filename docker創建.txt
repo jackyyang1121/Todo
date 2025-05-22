@@ -1,3 +1,4 @@
+先啟動docker desktop
 docker pull postgres
 docker run -d --name my-local-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres
 docker exec -it my-local-postgres bash

@@ -19,7 +19,7 @@ model = Todo:
 
 fields = ['id', 'title', 'completed', 'created_at']:
 指定序列化器要處理的字段（欄位）。
-id：待辦事項的唯一識別碼（通常是自動生成的）。
+id：待辦事項的唯一識別碼（Django內建功能會自動幫我把models.py裡面的Todo模型生成id，遞增，為每個模型生成讀為每個模型生成獨有的id）。
 """
 
 """

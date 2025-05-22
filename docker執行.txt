@@ -1,1 +1,3 @@
+先啟動docker desktop
+docker pull postgres
 docker start my-local-postgres

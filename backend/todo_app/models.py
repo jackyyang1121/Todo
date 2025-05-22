@@ -15,7 +15,7 @@ class Todo(models.Model):
     
     def __str__(self):
         return self.title
-    #這是一個特殊的 Python 方法，定義了當你打印 Todo 物件時，應該顯示什麼。這裡設定為返回 title 欄位的值，這樣在 Django 管理介面或終端機中，Todo 物件會顯示標題
+    #這是一個特殊的 Python 方法，定義了當你打印 Todo 物件時，應該顯示什麼。這裡設定為返回 title 欄位的值，這樣在Django 管理介面或終端機中，Todo 物件會顯示標題
 
 '''
 這個 models.py 檔案定義了一個簡單的 Todo 模型，代表一個待辦事項清單的資料結構。它的資料庫表會有以下欄位：
